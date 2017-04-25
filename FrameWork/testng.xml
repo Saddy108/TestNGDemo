@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AnnotationExample">
+	<test name="All">
+		<parameter name="sUsername" value="Sad" />
+		<parameter name="sPassword" value="Anand" />
+
+		<groups>
+			<define name="All">
+				<include name="AfterValidation" />
+				<include name="UserAccess" />
+			</define>
+			<run>
+				<include name="All" />
+			</run>
+		</groups>
+		
+		
+		<classes>
+			<class name="Basic.TestCaseGroup_3" />
+<class name="Basic.TestCaseGroup_3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+

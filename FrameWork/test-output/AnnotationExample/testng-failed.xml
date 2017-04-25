@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AnnotationExample]">
+  <test name="All(failed)">
+    <parameter name="sPassword" value="Anand"/>
+    <parameter name="sUsername" value="Sad"/>
+    <classes>
+      <class name="Advance.FlightLogin">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="Login"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- Advance.FlightLogin -->
+    </classes>
+  </test> <!-- All(failed) -->
+</suite> <!-- Failed suite [AnnotationExample] -->

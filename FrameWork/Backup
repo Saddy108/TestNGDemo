@@ -1,0 +1,99 @@
+==Annotation
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AnnotationExample">
+  <test name="Login">
+    <classes>
+      <class name="Basic.Annotations"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+==2 Classes
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AnnotationExample">
+  <test name="Login">
+    <classes>
+      <class name="Basic.Annotations"/>
+      <class name="Basic.EssentialAnnotation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+==2 Test Case
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AnnotationExample">
+	<test name="All">
+		<classes>
+			<class name="Basic.Annotations" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Essential">
+		<classes>
+			<class name="Basic.EssentialAnnotation" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
+
+==HierarChy
+
+<suite>
+
+ 	   <test>
+
+			 <classes>
+
+				 	<method>
+
+				    	  <test>
+
+				    </method>
+
+			 </classes>
+
+	   </test>
+
+</suite>
+
+
+==Include Single Group
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AnnotationExample">
+	<test name="All">
+		<groups>
+			<run>
+				<include name="UserAccess" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Basic.TestCaseGroup_3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+==Include All Group
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AnnotationExample">
+	<test name="All">
+		<groups>
+			<define name="All">
+				<include name="AfterValidation" />
+				<include name="UserAccess" />
+			</define>
+			<run>
+				<include name="All" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Basic.TestCaseGroup_3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
